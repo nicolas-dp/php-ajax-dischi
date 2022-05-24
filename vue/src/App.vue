@@ -58,6 +58,7 @@ export default {
       .then((response) => {
         this.cards = response.data;
         this.loading = false;
+        JSON.parse(this.cards);
       })
 
       .catch((error) => {
