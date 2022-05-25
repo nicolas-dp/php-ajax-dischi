@@ -54,7 +54,7 @@ export default {
 
   mounted() {
     axios
-      .get("http://localhost/PHP/php-ajax-dischi/php/db.php")
+      .get("http://localhost/PHP/php-ajax-dischi/php/api.php")
       .then((response) => {
         this.cards = response.data;
         this.loading = false;
