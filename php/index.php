@@ -3,8 +3,11 @@ Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i disch
 
 <?php
 include __DIR__ . './db.php';
+include __DIR__ . '/layout/head.php'; 
 
-include __DIR__ . '/layout/head.php'; ?>
+
+
+?>
 <main>
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-6 g-4 justify-content-center">

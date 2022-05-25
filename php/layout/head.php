@@ -13,12 +13,27 @@
 
 <body>
 
-    <header>
-        <nav class="navbar navbar-dark bg-dark">
+    <header class="p-3 bg-dark d-flex justify-content-between align-items-center">
+        <nav class="navbar navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./img/spotify.png" alt="logo" height="50" width="50" />
                 </a>
             </div>
         </nav>
+
+        <div class="filter">
+            <form action="/../php/php-ajax-dischi/php/" method="get">
+                <select name="genre" id="genre">
+                    <option value="">All genres</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Jazz">Jazz</option>
+                    <option value="Metal">Metal</option>
+                </select>
+
+                <button type="submit">Filtra</button>
+
+            </form>
+        </div>
     </header>
